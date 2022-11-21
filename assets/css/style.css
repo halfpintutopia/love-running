@@ -36,7 +36,7 @@ h2 {
     font-family: var(--font-family-heading);
     text-transform: uppercase;
     letter-spacing: var(--letter-spacing);
-    color:  var(--mine-shaft-dark);
+    color: var(--mine-shaft-dark);
 }
 
 #logo {
@@ -76,7 +76,8 @@ h2 {
 }
 
 /* hero image */
-#cover-text, #cover-text h2 {
+#cover-text,
+#cover-text h2 {
     color: #fff;
 }
 
@@ -101,6 +102,7 @@ h2 {
     from {
         transform: scale(1);
     }
+
     to {
         transform: scale(1.1);
     }
@@ -218,7 +220,8 @@ hr {
     padding: calc(var(--standard-padding) * 3) 0 0 var(--standard-padding);
     text-align: center;
     border: var(--box-border);
-    box-sizing: border-box; /* include border width */
+    box-sizing: border-box;
+    /* include border width */
 }
 
 #times h2 {
@@ -226,3 +229,21 @@ hr {
 }
 
 /* footer */
+footer {
+    height: 150px;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks > li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: var(--mine-shaft-light);
+}
