@@ -15,7 +15,9 @@
     --section-height: 600px;
     --background-overlay: rgba(0, 0, 0, .6);
     --box-border: 2px solid var(--white);
-    --border-radius: 50%;
+    --circle-radius: 50%;
+    --light-grey: #ccc;
+    --standard-dimension: 100px;
 }
 
 * {
@@ -188,8 +190,6 @@ hr {
 }
 
 #circle-container {
-    --light-grey: #ccc;
-    --standard-dimension: 100px;
     width: 300px;
     height: 300px;
     padding: 30px;
