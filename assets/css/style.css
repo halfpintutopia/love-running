@@ -7,7 +7,7 @@
     --mine-shaft-dark: #252525;
     --standard-size: 75px;
     --letter-spacing: 4px;
-    --standard-margin: 15px;
+    --standard-margin: 10px;
     --standard-padding: 10px;
     --dark-border: 1px solid var(--mine-shaft-light);
     --section-height: 600px;
@@ -37,7 +37,7 @@ h2 {
 #logo {
     float: left;
     font-size: 280%;
-    margin-left: calc(var(--standard-margin) * 2);
+    margin-left: calc(var(--standard-margin) * 3);
 }
 
 #menu {
@@ -54,7 +54,7 @@ h2 {
 #menu li {
     float: left;
     list-style-type: none;
-    margin-right: calc(var(--standard-margin) * 2);
+    margin-right: calc(var(--standard-margin) * 3);
 }
 
 #menu a {
@@ -147,13 +147,29 @@ h2 {
 hr {
     border-top: var(--dark-border);
     width: 100%;
-    margin: 5px 0;
+    margin: calc(var(--standard-margin) / 2) 0;
+}
+
+.left-about-heading,
+.right-about-heading {
+    width: 60%;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: calc(var(--standard-margin) * 5);
 }
 
 .left-about-heading {
-    width: 60%;
     float: right;
-    line-height: 20px;
-    clear: both;
-    margin-bottom: 50px;
+}
+
+.right-about-heading {
+    float: left;
+}
+
+.right-about-heading h2 {
+    text-align: right;
+}
+
+.right-about-heading {
+    text-align: right;
 }
