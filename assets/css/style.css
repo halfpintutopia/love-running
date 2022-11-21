@@ -5,12 +5,17 @@
     --font-family-heading: Oswald, sans-serif;
     --mine-shaft-light: #3a3a3a;
     --mine-shaft-dark: #252525;
+    --offwhite: #fafafa;
+    --white: #fff;
     --standard-size: 75px;
     --letter-spacing: 4px;
     --standard-margin: 10px;
     --standard-padding: 10px;
     --dark-border: 1px solid var(--mine-shaft-light);
     --section-height: 600px;
+    --background-overlay: rgba(0, 0, 0, .6);
+    --box-border: 2px solid var(--white);
+    --border-radius: 50%;
 }
 
 * {
@@ -187,14 +192,14 @@ hr {
     height: 300px;
     padding: 30px;
     border: 1px solid #ccc;
-    border-radius: 50%;
+    border-radius: var(--circle-radius);
     margin: 0 auto;
 }
 
 #circle-cover-bg {
     background: url('../images/ethos-center-image.jpg') no-repeat center center;
     height: 100%;
-    border-radius: 50%;
+    border-radius: var(--circle-radius);
 }
 
 /* event times */
@@ -205,19 +210,17 @@ hr {
 }
 
 #times div {
-    --offwhite: #fafafa;
     color: var(--offwhite);
-    background-color: rgba(0, 0, 0, .6);
+    background-color: var(--background-overlay);
     width: calc(100% / 5);
     height: 300px;
     float: left;
-    padding: 30px 0 0 10px;
+    padding: calc(var(--standard-padding) * 3) 0 0 var(--standard-padding);
     text-align: center;
-    border: 2px solid white;
+    border: var(--box-border);
     box-sizing: border-box; /* include border width */
 }
 
 #times h2 {
-    --offwhite: #fafafa;
     color: var(--offwhite);
 }
