@@ -10,6 +10,7 @@
     --standard-margin: 15px;
     --standard-padding: 10px;
     --dark-border: 1px solid var(--mine-shaft-light);
+    --section-height: 600px;
 }
 
 * {
@@ -36,6 +37,7 @@ h2 {
 #logo {
     float: left;
     font-size: 280%;
+    margin-left: calc(var(--standard-margin) * 2);
 }
 
 #menu {
@@ -74,14 +76,14 @@ h2 {
 }
 
 #hero-outer {
-    height: 600px;
+    height: var(--section-height);
     width: 100%;
     overflow: hidden;
     position: relative;
 }
 
 #hero-image {
-    height: 600px;
+    height: var(--section-height);
     width: 100%;
     background: url('../images/hero-image.webp') no-repeat center center;
 
@@ -112,4 +114,32 @@ h2 {
     bottom: 30px;
     right: 150px;
     position: absolute;
+}
+
+/* club ethos */
+#club-ethos {
+    height: var(--section-height);
+}
+
+#left-about,
+#right-about,
+#center-about {
+    width: calc(100% / 3);
+}
+
+#left-about,
+#right-about {
+    padding-top: calc(var(--standard-padding) * 2);
+}
+
+#left-about {
+    float: left;
+}
+
+#right-about {
+    float: right;
+}
+
+#center-about {
+    margin: 0 auto;
 }
