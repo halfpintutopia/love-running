@@ -8,7 +8,7 @@
     --standard-size: 75px;
     --letter-spacing: 4px;
     --standard-margin: 15px;
-    --standard-padding: 15px;
+    --standard-padding: 10px;
     --dark-border: 1px solid var(--mine-shaft-light);
 }
 
@@ -69,10 +69,15 @@ h2 {
 }
 
 /* hero image */
+#cover-text, #cover-text h2 {
+    color: #fff;
+}
+
 #hero-outer {
     height: 600px;
     width: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 #hero-image {
@@ -92,4 +97,19 @@ h2 {
     to {
         transform: scale(1.1);
     }
+}
+
+#cover-text {
+    font-size: 130%;
+    font-family: var(--font-family-heading);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+    width: 300px;
+    height: 200px;
+    padding-top: calc(var(--standard-padding) * 4);
+    padding-left: var(--standard-padding);
+    background-color: hsla(1, 83%, 68%, 0.7);
+    bottom: 30px;
+    right: 150px;
+    position: absolute;
 }
