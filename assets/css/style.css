@@ -143,3 +143,17 @@ h2 {
 #center-about {
     margin: 0 auto;
 }
+
+hr {
+    border-top: var(--dark-border);
+    width: 100%;
+    margin: 5px 0;
+}
+
+.left-about-heading {
+    width: 60%;
+    float: right;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
