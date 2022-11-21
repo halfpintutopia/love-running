@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
 
+:root {
+    --font-family-body: Lato, sans-serif;
+    --font-family-heading: Oswald, sans-serif;
+    --mine-shaft-light: #3a3a3a;
+    --mine-shaft-dark: #252525;
+    --standard-size: 75px;
+    --letter-spacing: 4px;
+    --standard-margin: 15px;
+    --standard-padding: 15px;
+    --dark-border: 1px solid var(--mine-shaft-light);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,18 +19,18 @@
 }
 
 body {
-    font-family: Lato, sans-serif;
+    font-family: var(--font-family-body);
     font-weight: 300;
-    color: #3a3a3a;
+    color: var(--mine-shaft-light);
 }
 
 /* headings and logo */
 h1,
 h2 {
-    font-family: Oswald, sans-serif;
+    font-family: var(--font-family-heading);
     text-transform: uppercase;
-    letter-spacing: 4px;
-    color:  #252525;
+    letter-spacing: var(--letter-spacing);
+    color:  var(--mine-shaft-dark);
 }
 
 #logo {
@@ -28,19 +40,19 @@ h2 {
 
 #menu {
     font-size: 110%;
-    letter-spacing: 4px;
+    letter-spacing: var(--letter-spacing);
     float: right;
 }
 
 #menu,
 #logo {
-    line-height: 75px;
+    line-height: var(--standard-size);
 }
 
 #menu li {
     float: left;
     list-style-type: none;
-    margin-right: 30px;
+    margin-right: calc(var(--standard-margin) * 2);
 }
 
 #menu a {
@@ -49,9 +61,9 @@ h2 {
 }
 
 #menu a:hover {
-    border-bottom: 1px solid #3a3a3a
+    border-bottom: var(--dark-border);
 }
 
 .active {
-    border-bottom: 1px solid #3a3a3a
+    border-bottom: var(--dark-border);
 }
